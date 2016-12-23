@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <title></title>
 
+<!-- <link href="./static/bootstrap.min.css" rel="stylesheet"> -->
 <link href="./static/mycss.css" rel="stylesheet">
 <link href="./static/mycssnavbar.css" rel="stylesheet">
 <style>
@@ -116,7 +117,7 @@ font-weight: bold;
     <dl>
         <dt>其他</dt>
         <dd>拼音字码尚未整理完，涵盖方言音字码，拼音和双拼的有些字码错误</dd>
-        <dd><a target="_blank" href="https://github.com/britneyxiang/chImeTip12">源码和细项</a></dd>
+        <dd><a target="_blank" href="https://github.com/britneyxiang/IMEstreamingtipDEV">源码和细项</a></dd>
         <dd> 作者mail <span> britneyxiang@gmail.com </span> </dd>
     </dl>
 
