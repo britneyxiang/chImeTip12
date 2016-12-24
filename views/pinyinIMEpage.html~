@@ -1,7 +1,7 @@
 <script type="text/javascript">
 //navbar active
 $("li").css("background-color", "#5f5f5f");
-$("#gotoCJ_ime").css("background-color", "#4CAF50");
+$("#gotoPinYin_ime").css("background-color", "#4CAF50");
 </script>
 
 <body>
@@ -172,7 +172,4 @@ $('#tareBtn0').click(function(){
         $("textarea").val('');
 });
 
-// Cookies.set('name', 'value000', { expires: 7, path: '/' });
-// var ggqq = Cookies.remove('name');
-// Cookies.remove('name'); 
 </script>
