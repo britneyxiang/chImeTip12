@@ -11,7 +11,6 @@
     padding: 25px 25px ;
 }
 
-/* tareBtn0 */
 #tareBtn0 {
   display: inline-block;
   padding: 5px 25px;
@@ -48,7 +47,7 @@
     padding: 0px 0px;
 	    margin: 1px 1px;
 }
-#tipDiv {
+.tipDiv {
         padding: 9px 0px;
 	    margin: 7px 11px;
     color: OrangeRed;
@@ -56,6 +55,7 @@ font-weight: bold;
     text-align: center;
     font-size: 200%;
         background-color: OldLace;
+border:3px solid grey;
 }
     .txShowCs {
         display: inline-block;
@@ -78,11 +78,6 @@ font-weight: bold;
     <body>
 <script type="text/javascript">
 
-// if ((coochk0.constructor === String) && (coochk0.length > 0)){
-// spss1time = coochk0;
-// } else {
-// spss1time = "打字区域";
-// }
 
 </script>
     
@@ -127,8 +122,11 @@ font-weight: bold;
 </html>
 
 
-<script type="text/javascript">
+<!-- <p> ================================= </p> -->
+            <!-- <script type="text/javascript" src="./dict/pinYinDict.js"></script> -->
 
+<script type="text/javascript">
+//  load navbar item
 $("#gotoCJ_ime").click(function(){
     $.getScript( "./dict/msCjDict.js" )
         .done(function( script, textStatus ) {
@@ -139,7 +137,7 @@ $("#gotoCJ_ime").click(function(){
     });
 });
 $("#gotoPinYin_ime").click(function(){
-    $.getScript( "./dict/thPinYinDict.js" )
+    $.getScript( "./dict/pinYinDict.js" )
         .done(function( script, textStatus ) {
             $("#bodyContentID").load("./views/pinyinIMEpage.html");
         })
@@ -149,7 +147,7 @@ $("#gotoPinYin_ime").click(function(){
 });
 
 $("#goto_2Pin_ime").click(function(){
-    $.getScript( "./dict/thPinYinDict.js" )
+    $.getScript( "./dict/pinYinDict.js" )
         .done(function( script, textStatus ) {
             $("#bodyContentID").load("./views/ms2pinIMEpage.html");
         })
@@ -160,6 +158,7 @@ $("#goto_2Pin_ime").click(function(){
 
 
 // wordGroup_var
+//load default word groups 
 $('#S_wordGroup1').click(function(){
 $("textarea").val(wordGroup_var1);
 $('#tareBtn0').click();

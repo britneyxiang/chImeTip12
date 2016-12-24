@@ -1,5 +1,5 @@
-
 <script type="text/javascript">
+//navbar active
 $("li").css("background-color", "#5f5f5f");
 $("#goto_2Pin_ime").css("background-color", "#4CAF50");
 </script>
@@ -16,13 +16,15 @@ $("#goto_2Pin_ime").css("background-color", "#4CAF50");
 
 <div class="spanOut">
     <h4>字码提示</h4>
-    <p id="tipDiv">spanTIP</p>
+    <p id="tipDiv1" class="tipDiv">spanTIP</p>
+    <p id="tipDiv2" class="tipDiv">2spanTIP</p>
+    <p id="tipDiv3" class="tipDiv">3spanTIP</p>
+    <p id="tipDiv4" class="tipDiv">4spanTIP</p>
 </div>
 
 </body>
 <script type="text/javascript">
 
-var str = "Apples are sh zh chi AAchlround, and apples are juicy.";
 // regex test DeEVdev
 var re = /\bsh|\bzh|\bch/gi;
 var reg_1Yun = /\ba\b|\bo\b|\be\b/g;  //non map
@@ -133,10 +135,24 @@ loadPageShowInput();
 
 //show chCode 1st
 function showchCodeTip1st(){
-    var x = cbInput[0];
-    var qc1 =  qryCh(x,cin3);
-    var qc2 = shungpin(qc1);
-    $("#tipDiv").text(qc2);
+    // var x = $("#txShow0").text();
+    var x1 = cbInput[0];
+    var x2 = cbInput[1];
+    var x3 = cbInput[2];
+    var x4 = cbInput[3];
+    var qc1 =  qryCh(x1,cin3);
+    var qc2 =  qryCh(x2,cin3);
+    var qc3 =  qryCh(x3,cin3);
+    var qc4 =  qryCh(x4,cin3);
+    var qch1 = shungpin(qc1);
+    var qch2 = shungpin(qc2);
+    var qch3 = shungpin(qc3);
+    var qch4 = shungpin(qc4);
+
+    $("#tipDiv1").text(qch1);
+    $("#tipDiv2").text(qch2);
+    $("#tipDiv3").text(qch3);
+    $("#tipDiv4").text(qch4);
 }
 showchCodeTip1st();
 
@@ -154,9 +170,18 @@ function combineallinput(){
             for (i=0;i<val.length;i++){
                 if(val[i] == cbInput[i]) {
                     var qc1 =  qryCh(cbInput[i+1],cin3);
-                    var qc2 = shungpin(qc1);
-                    console.log(qc2);
-                    $("#tipDiv").text(qc2);
+                    var qc2 =  qryCh(cbInput[i+2],cin3);
+                    var qc3 =  qryCh(cbInput[i+3],cin3);
+                    var qc4 =  qryCh(cbInput[i+4],cin3);
+                    var qch1 = shungpin(qc1);
+                    var qch2 = shungpin(qc2);
+                    var qch3 = shungpin(qc3);
+                    var qch4 = shungpin(qc4);
+
+                    $("#tipDiv1").text(qch1);
+                    $("#tipDiv2").text(qch2);
+                    $("#tipDiv3").text(qch3);
+                    $("#tipDiv4").text(qch4);
                     $("#txShow"+i).css("background-color","lightgreen");
                 } else {
                     $("#txShow"+i).css("background-color","red");

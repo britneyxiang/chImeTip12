@@ -14,12 +14,12 @@ var _2BtmYun = [
 {"ch":"an","code":"j"},
 {"ch":"ang","code":"h"},
 {"ch":"ao","code":"k"},
-{"ch":"ei","code":"q"},
+{"ch":"ei","code":"z"},
 {"ch":"en","code":"f"},
 {"ch":"eng","code":"g"},
 {"ch":"er","code":"r"},
 {"ch":"ia","code":"w"},
-{"ch":"ian","code":"w"},
+{"ch":"ian","code":"m"},
 {"ch":"iang","code":"d"},
 {"ch":"iao","code":"c"},
 {"ch":"ie","code":"x"},
@@ -39,4 +39,3 @@ var _2BtmYun = [
 {"ch":"uo","code":"o"},
 {"ch":"v","code":"y"}
 ]
-
