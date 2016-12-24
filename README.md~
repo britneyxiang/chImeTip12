@@ -36,5 +36,4 @@
 > * [大新仓颉 打字达人](http://www.eztyping.com.tw/)，桌面应用版本，付费软体
 > * [小鹤双拼网页版](https://typing.sjz.io/#/keyboard)，网页版本
 > * [互联网词库(SogouW)](http://www.datatang.com/data/43728)，网页版本
-> * [注音对照](http://cls.hs.yzu.edu.tw/pronounce.htm)，网页版本
 
