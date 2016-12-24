@@ -110,6 +110,10 @@ border:3px solid grey;
 
     <dl>
         <dt>其他</dt>
+        <dd>换行： </dd>
+        <dd>换行按tab键盘，如果使用微软“新”输入法，要先按enter键才能tab换行。</dd>
+        <dd>EX...微软新仓颉 </dd>
+        <dd></dd>
         <dd>拼音字码尚未整理完，涵盖方言音字码，拼音和双拼的有些字码错误</dd>
         <dd><a target="_blank" href="https://github.com/britneyxiang/chImeTip12">源码和细项</a></dd>
 

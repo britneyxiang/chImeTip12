@@ -6,35 +6,21 @@
 <pre>https://britneyxiang.github.io/chImeTip12/</pre>
 <a href="https://britneyxiang.github.io/chImeTip12/" target="_blank">连结到项目网页</a>
 
+输入法练习网页 动态提示
 
-## 项目需求
-* 中文输入法练习
-以“词”和“文章”来练习中文输入法。
-动态打字提示
+使用说明：
+连结到某个输入法分页
+切换系统输入法
+选择一个预设词组 或者 使用者自己输入文章
+开始练习
 
-** 型码音码，拆型拆音
-型码
-  以内建输入法为主
-音码
-    以拼音输入法为主
-    以普通话发音为主
-    以 大陆汉语拼音 为主
-    破音字以常用字为主
-    双拼
-        以内建输入法为主
-
-## 资料来源
-* 字码: PIME输入法
-> * [互联网词库(SogouW)](http://www.datatang.com/data/43728)，网页版本
-注音拼音对照表
-http://cls.hs.yzu.edu.tw/pronounce.htm
+其他
+换行：
+    换行按tab键盘，如果使用微软“新”输入法，要先按enter键才能tab换行。
+    EX...微软新仓颉
+拼音字码尚未整理完，涵盖方言音字码，拼音和双拼的很多字码错误
 
 
-## 参考
-> 这种应用很多，但是有文章输入+字码提示的，目前找到2个
-> * [大新仓颉 打字达人](http://www.eztyping.com.tw/)，桌面应用版本，付费软体
-> 这是一种简码仓颉，可能是付费的关系，所以自带的练习软体有这个功能。
-> * [小鹤双拼网页版](https://typing.sjz.io/#/keyboard)，网页版本
-> 这是目前，我找到，唯一有这个功能的网页版
-> 
 
+作者:@britneyxiang
+email:britneyxiang@gmail.com
