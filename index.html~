@@ -83,7 +83,7 @@ border:3px solid grey;
     
 <ul>
   <li class="fL home"><a href="./">Home</a></li>
-  <li class="fL" id="gotoCJ_ime"><a href="#">仓颉3</a></li>
+  <li class="fL" id="gotoCJ_ime"><a href="#">仓颉</a></li>
   <li class="fL" id="gotoPinYin_ime"><a href="#">拼音</a></li>
   <li class="fL" id="goto_2Pin_ime"><a href="#">MS双拼</a></li>
   
