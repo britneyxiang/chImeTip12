@@ -37,23 +37,16 @@ function s2Arr_ftSign(x){
 }
 // console.log('===NG achorn.==============================');
 
-// cookie の 
 // show check 如果空值 then showtext = "default string"
 // spss1time 是 default String
 function checkString(x){
     // if (x.length > 0){
     if ((x.length > 0) && (x)){
-        // true then don't show spss1time 
-        // Cookies.set('coo_txShow', x, { expires: 1, path: '/' });
         return x
     } else {
-        // false then show spss1time 
- // Cookies.remove('coo_txShow');
         return dflt_spss
     }
 }
-
-
 
 // layout span input tagsTEXT,,by Arr
 function layoutSItxt(xArr){
@@ -78,13 +71,13 @@ cbInput = xArr;  // for compare use
 }
 
 // find IME mapping code
-function qryCh(a){
-    for (x in cin3)
-    {
-        if(cin3[x].ch == a)
-        {return cin3[x].code; }
-    }
-}
+function qryCh(a , b){
+    for (x in b) {
+        if(b[x].ch == a){
+            // call shungpin ext plugin here
+            // var b = cin3[x].code; 
+            return b[x].code; 
+        } } }
 
 function loadPageShowInput(){
 var spss1time ='';
@@ -97,17 +90,21 @@ var s1t2 =s2Arr_ftSign(s1t);
 loadPageShowInput();
 
 
+function resultListfunc(a,b){
+    for(var i = 0, qRelist = [], len = a.length; i<len; i++){
+        qRelist[i]=qryCh(a[i],b);
+    }
+    return qRelist
+}
+qryresult = resultListfunc(cbInput,cin3)
+
+
 //show chCode 1st
 function showchCodeTip1st(){
-    // var x = $("#txShow0").text();
-    var x1 = cbInput[0];
-    var x2 = cbInput[1];
-    var x3 = cbInput[2];
-    var x4 = cbInput[3];
-    var qc1 =  qryCh(x1);
-    var qc2 =  qryCh(x2);
-    var qc3 =  qryCh(x3);
-    var qc4 =  qryCh(x4);
+    var qc1 =  qryresult[0];
+    var qc2 =  qryresult[1];
+    var qc3 =  qryresult[2];
+    var qc4 =  qryresult[3];
     $("#tipDiv1").text(qc1);
     $("#tipDiv2").text(qc2);
     $("#tipDiv3").text(qc3);
@@ -115,23 +112,23 @@ function showchCodeTip1st(){
 }
 showchCodeTip1st();
 
-// compare string and show color chCode 動態的地
-// combine all input.val()
 function combineallinput(){
     var inputs = document.querySelectorAll("input");
     Array.prototype.forEach.call(inputs, function(input) {
         input.addEventListener("input", function(e) {
             // inputs value 有2层，2个for拆开
+
             for (var i = 0, val = "", len = inputs.length; i < len; i++) {
                 val += inputs[i].value;
             }
             val = val.split("");
+
             for (i=0;i<val.length;i++){
                 if(val[i] == cbInput[i]) {
-                    var qc1 =  qryCh(cbInput[i+1]);
-                    var qc2 =  qryCh(cbInput[i+2]);
-                    var qc3 =  qryCh(cbInput[i+3]);
-                    var qc4 =  qryCh(cbInput[i+4]);
+                    var qc1 =  qryresult[i+1];
+                    var qc2 =  qryresult[i+2];
+                    var qc3 =  qryresult[i+3];
+                    var qc4 =  qryresult[i+4];
                     $("#tipDiv1").text(qc1);
                     $("#tipDiv2").text(qc2);
                     $("#tipDiv3").text(qc3);
@@ -150,21 +147,16 @@ function combineallinput(){
 }
 combineallinput();
 
-
-
-
 function sendtext(x){
 var y = checkString(x);
         var yy = s2Arr_ftSign(y);
     $("#imeOuter").empty();
+qryresult = resultListfunc(yy,cin3)
         layoutSItxt(yy);
         combineallinput();
         // loadPageShowInput();
         showchCodeTip1st();
 }
-
-// var test3 = '区域';
-// sendtext(test3);
 
 $('#tareBtn0').click(function(){
     var spssS =$("textarea").val();
@@ -172,7 +164,4 @@ $('#tareBtn0').click(function(){
         $("textarea").val('');
 });
 
-// Cookies.set('name', 'value000', { expires: 7, path: '/' });
-// var ggqq = Cookies.remove('name');
-// Cookies.remove('name'); 
 </script>
