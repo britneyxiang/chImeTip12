@@ -1,9 +1,4 @@
-# chImeTip12/ 中文輸入法文章詞組動態提示 网页版本
->  version 1.0 
-
-
 ### 项目连结网址
-<pre>https://britneyxiang.github.io/chImeTip12/</pre>
 <a href="https://britneyxiang.github.io/chImeTip12/" target="_blank">连结到项目网页</a>
 
 * 输入法练习网页 动态提示
@@ -33,3 +28,12 @@
  
 * 作者:@britneyxiang
 * email:britneyxiang@gmail.com
+
+# chImeTip12/ 中文輸入法文章詞組動態提示 网页版本
+>  version 1.1 16.12.27 :修正打字时严重lag,增加本地端模版。
+>  version 1.0 
+
+## bug && 功能缺损
+* 音码字典档有方言混杂，待整理。
+* 没有1字对多码，只有1字对1码。
+* 破音字。
