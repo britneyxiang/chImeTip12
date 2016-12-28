@@ -47,5 +47,6 @@ http://cls.hs.yzu.edu.tw/pronounce.htm
 > 这是一种简码仓颉，可能是付费的关系，所以自带的练习软体有这个功能。
 > * [小鹤双拼网页版](https://typing.sjz.io/#/keyboard)，网页版本
 > 这是目前，我找到，唯一有这个功能的网页版
-> 
+> * 拼音方案圖表
+> https://support.google.com/pinyin/answer/93317?hl=zh-Hans
 
